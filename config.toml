@@ -1,0 +1,16 @@
+baseurl = "http://ngraap-dff.com"
+title = "Praktikum bei DFF"
+languageCode = "en-us"
+disqusShortname = "NGraap"
+navbarTitle          = "Praktikum"
+[params.intro.pic]  src       = "/img/main/logo.png"
+[[menu.main]]
+    name = "Posts"
+    url = "/post"
+    identifier = "fa fa-newspaper-o"
+    weight = 1
+	[[menu.main]]
+    name = "Blogdd"
+    url = "/blog"
+    identifier = "fa fa-newspaper-o"
+    weight = 1
