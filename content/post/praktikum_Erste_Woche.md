@@ -1,23 +1,34 @@
 +++
-date = "2016-10-26"
-title = "praktikum"
+date = "2016-10-24"
+title = "Erste Woche bei dff"
 categories = [ "Development" ]
-
 author = "Niklas Graap"
-
 description = "Hier schreibe ich über die erste Woche im Praktikum"
-featured = "pic02.jpg"
+featured = "Mobilcomputer.jpg"
 featuredalt = ""
 featuredpath = "date"
 linktitle = ""
 type = "post"
-
 +++
 
 # Praktikum bei dff
 
 
-### Woche 1 24.10 - 29.10
+## Woche 1 24.10 - 29.10
+
+### Einleitung
+
+Mein Betriebspraktikum mache ich bei dff solutions in Göttingen. Das Büro liegt in der näche vom Bahnhof.
+
+[Hier gehts zur Webseite von dff](http://dff-solutions.de)
+
+So sieht das Gebäude aus:
+![Standort von dff](/arkaden.jpg)
+
+Wieviele Leute arbeiten hier?
+Was sind das für Leute? Was haben die für eine Ausbildung?
+Was wird hier gemacht?
+Was hat dff für Kunden?
 
 #### Tag 1 
 Ich habe meine HTML- und CSS-Kentnisse erweitert.
@@ -80,42 +91,5 @@ Ich habe meine HUGO-Seite verbessert.
 Ich habe mit AngularJS eine kleine technische Spielerei erstellt. (AngularJS ist ein JavaScript-Framework, damit man den Code nicht komplett von Hand schreiben muss.)
 
 
----
-
-### Woche 2 31.10 - 4.10
-
-#### Tag 1
-
-#### Tag 2
-
-#### Tag 3
-
-#### Tag 4
-
-#### Tag 5
-
----
 
 
-### Woche 3 6.10 - 11.10
-
-#### Tag 1
-
-#### Tag 2
-
-#### Tag 3
-
-#### Tag 4
-
-#### Tag 5
-
----
-
-## Fazit
-
-
-
-
-[Website von dff](http://dff-solutions.de)
-
-![Standort von dff](/arkaden.jpg)

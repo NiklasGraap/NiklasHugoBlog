@@ -1,179 +1,589 @@
-<!DOCTYPE html>
+<!DOCTYPE HTML>
+
 <html>
-  <head>
-    <meta charset="utf-8">
-<meta name="pinterest" content="nopin">
-<meta name="viewport" content="width=device-width,minimum-scale=1,initial-scale=1">
-<meta name="theme-color" content="#263238">
-
-<meta name="generator" content="Hugo 0.17" />
-
-<link rel="apple-touch-icon" href="http://ngraap-dff.comimages/logo.png">
-<link rel="alternate" type="application/rss+xml" title="RSS" href="http://ngraap-dff.com/index.xml">
-
-<link rel="canonical" href="http://ngraap-dff.com/">
-
-
-    
-    <link href="//fonts.googleapis.com/css?family=Noto+Sans:400,700|Montserrat" rel="stylesheet">
-    
-    <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.4/styles/solarized_dark.min.css">
-    <title>Praktikum bei DFF</title>
-    
-    <style>
-      html { font-size: 18px;}@media (max-width: 768px) { html { font-size: 15px; }}body { font-family: 'Noto Sans','Hiragino Kaku Gothic Pro',メイリオ,Meiryo,sans-serif; font-size: inherit; font-weight: 300; line-height: 1rem; background-color: #eceff1;}p { margin: 0;}a { color: #4caf50;}a:hover { text-decoration: none; color: #388e3c;}ul,ol { margin: 0; padding: 0;}h1, h2, h3, h4, h5, h6 { margin: 0; font-weight: 700;}h1 { font-size: 1.8rem; line-height: 2rem; margin: 1.5rem 0; }h2 { font-size: 1.4rem; line-height: 2rem; margin: 1.5rem 0; }h3 { font-size: 1.2rem; line-height: 1.5rem; margin: 1.5rem 0; }h4, h5, h6 { font-size: 1rem; line-height: 1.5rem; margin: 1.5rem 0; }main { display: block;}.content-inner { padding: 1rem 2rem;}.content-inner.thin { padding: .5rem 1rem;}@media (max-width: 768px) { .content-inner { padding: 1rem; }}/* Override */.container { position: relative;}/* Parts:layouts */.l-header { background-color: #fff; margin-bottom: 1rem; padding: 1rem 0; text-align: center;}.l-footer { font-size: .8rem; padding: 1.5rem 0;}/* Parts:menu */.p-menu { position: absolute; right: 15px; top: 0;}/* Parts:terms */.p-terms { list-style: none;}.p-terms .terms-title { margin: 0;}.p-terms a { display: inline-block; padding: .25rem 0;}.p-terms.inline li { display: inline-block; font-size: .8rem;}.p-terms.inline li::after { content: ',';}.p-terms.inline li:last-child::after { content: '';}/* Parts:paging */.p-paging { margin-bottom: 1.5rem; text-align: center;}.p-paging a { display: inline-block; padding: 1rem 1.5rem; margin: 0 .5rem; background-color: #cfd8dc; color: #263238;}/* Parts:section */section { margin-bottom: 1.5rem;}section>header { font-size: .8rem; font-weight: 700; margin-bottom: .5rem; text-transform: uppercase;}section>header a { color: #333; text-decoration: underline;}section.article-footer { margin-bottom: 1rem;}section.article-footer>header { margin-bottom: 0;}/* Parts:share */.p-share { min-width: 100%; margin-bottom: 1.5rem;}.p-share .share-inner { display: table; table-layout: fixed; width: 100%; border-spacing: .25rem;}.p-share a { display: table-cell; text-align: center; font-weight: 700; font-size: .7rem; padding: .5rem 0; color: #fff; border-radius: 5px;}.p-share a.ht { background-color: #00a4de; border-bottom: 2px solid #0083b1; }.p-share a.fb { background-color: #3b5998; border-bottom: 2px solid #2f4779; }.p-share a.tw { background-color: #1da1f2; border-bottom: 2px solid #1780c1; }.p-share a.gp { background-color: #dd4b39; border-bottom: 2px solid #b03c2d; }.p-share a.ln { background-color: #00c300; border-bottom: 2px solid #009c00; }.p-share a.ht::before { content: 'Hatena'; }.p-share a.fb::before { content: 'Facebook'; }.p-share a.tw::before { content: 'Twitter'; }.p-share a.gp::before { content: 'Google+'; }.p-share a.ln::before { content: 'LINE'; }/* Parts:logo */.h-logo { font-family: 'Montserrat', sans-serif;}.p-logo { display: inline-block; text-transform: uppercase;}.p-logo a { display: inline-block; font-size: 1.4rem; line-height: 2rem; color: #000;}/* Parts:crumb */.p-crumb ol { list-style: none; margin-bottom: 1rem;}.p-crumb li { display: inline; margin-right: .25rem; font-size: .8rem; color: #607d8b;}.p-crumb li::after { content: '/'; margin-left: .25rem;}.p-crumb li:last-child::after { content: '';}/* Parts:facts */.p-facts { list-style: none; font-size: .8rem; margin-bottom: 1rem;}.p-facts li { display: inline-block; margin-right: .5rem; color: #90a4ae;}.p-facts li i { margin-right: .5rem; color: #cfd8dc;}/* Parts:article */article { background-color: #fff;}article .title { margin: 0; margin-bottom: .5rem; font-weight: 700;}article .title a { color: #000;}article .thumb { display: block; background-image: url(http://ngraap-dff.comimages/default.jpg); background-position: center; background-size: cover;}article .summary { margin-bottom: .5rem; max-height: 5rem; overflow: hidden;}article.single .thumb { height: 18rem; margin-bottom: 1rem;}@media (max-width: 768px) { article.single .thumb { height: 12rem; }}article.li { margin-bottom: 1rem;}article.li .thumb { height: 7.5rem; margin-bottom: .5rem;}article.li.sm { background-color: transparent; margin-bottom: .5rem;}article.li.sm>header { padding: .5rem 0;}article.li.sm .title { font-size: .8rem; line-height: 1rem; margin-bottom: .25rem;}article.li.sm .p-facts { font-size: .6rem; margin-bottom: 0;}article.li.sm .thumb { float: left; margin-right: .5rem; height: 3rem; width: 3rem;}.article-body h2 { padding: 1rem 0; border-bottom: 2px solid #eceff1;}.article-body h2:first-child { margin-top: 0; }.article-body h3 { color: #428bca;}.article-body h4 { border-left: solid .25rem #428bca; padding: 0 .5rem;}.article-body p { margin: 1.5rem 0; line-height: 1.5rem;}.article-body a { text-decoration: underline;}.article-body ul,.article-body ol { padding-left: 1.5rem;}.article-body code { display: inline-block; font-family: Menlo, consolas, monospace; font-size: .8rem; padding: 0 .5rem; line-height: 1.5rem;}.article-body pre { margin: 1.5rem 0; padding: 0; font-size: .8rem; border: none; border-radius: 0;}.article-body pre code { display: block; line-height: 1rem; padding: 1rem;}.article-body blockquote { margin: 1.5rem 0; padding: .5rem 0; font-size: .8rem; border-top: 1px solid #eceff1; border-bottom: 1px solid #eceff1; color: #607d8b;}.article-body blockquote p { margin: .5rem 0; line-height: 1rem;}.article-body strong { box-shadow: 0 -.5rem 0 0 #90caf9 inset;}.article-body em { font-style: normal; font-weight: 700; color: #03a9f4;}.article-body figure { margin: 1.5rem 0; }.article-body figure img { max-width: 100%; }.article-body figure.left,.article-body figure.right { width: 15rem; height: 12rem; margin-top: 0;}.article-body figure.left { float: left; margin-right: 1rem; }.article-body figure.right { float: right; margin-left: 1rem; }@media (max-width: 768px) { .article-body figure.left, .article-body figure.right { float: none; margin: 0; width: auto; height: auto; }}.article-body figcaption { padding: .5rem 0; font-size: .8rem; text-align: center;}.article-body figcaption a { color: #263238;}
-      
-      
-    </style>
-  </head>
-
-  <body>
-    
-    
-    
-
-    <header class="l-header">
-      <div class="container">
-        <div class="p-logo">
-          <a href="http://ngraap-dff.com" class="h-logo">Praktikum bei DFF</a>
-        </div>
-      </div>
-    </header>
-
-    <main>
-      <div class="container">
+    <head>
         
-<div class="row">
-  <div class="col-md-8">
+            
+                <title>Praktikum bei DFF</title>
+            
+        
+
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <meta name="generator" content="Hugo 0.17" />
+        
+
+
+        
+        
+            
+        
+
+        
+        <meta property="og:title" content="Praktikum bei DFF" />
+<meta property="og:description" content="" />
+<meta property="og:type" content="website" />
+<meta property="og:url" content="http://ngraap-dff.com/" />
+
+
+<meta property="og:updated_time" content="2016-11-11T00:00:00&#43;00:00"/>
+
+
+
+
+
+
+
+
+
+        
+<meta itemprop="name" content="Praktikum bei DFF">
+<meta itemprop="description" content="">
+
+
+        
+
+        
+
+        
+        
+            
+        
+
+        
+        
+            <link rel="stylesheet" href="/css/google-font.css" />
+            <link rel="stylesheet" href="/css/font-awesome.min.css" />
+            <link rel="stylesheet" href="/css/main.css" />
+            <link rel="stylesheet" href="/css/add-on.css" />
+            <link rel="stylesheet" href="/css/monokai-sublime.css">
+        
+
+        
+
+        
+        
+        
+            
+        
+    </head>
+    <body>
+
+        
+        <div id="wrapper">
 
     
+    
+<header id="header">
+    
+        <h1><a href="/"></i></a></h1>
+    
 
-    <div class="row">
-      
-      <div class="col-sm-6 col-xs-12"><article class="li">
-  <a href="http://ngraap-dff.com/post/praktikum-blog/" class="thumb"></a>
-  <div class="content-inner thin">
-    <h2 class="title"><a href="http://ngraap-dff.com/post/praktikum-blog/">praktikum blog eins</a></h2>
+    <nav class="links">
+        <ul>
+            
+                <li>
+                    <a href="/post">
+                        
+                            <i class="fa fa-newspaper-o">&nbsp;</i>Posts
+                    </a>
+                </li>
+            
+        </ul>
+    </nav>
+    <nav class="main">
+        <ul>
+            
+            <li id="share-nav" class="share-menu" style="display:none;">
+                <a class="fa-share-alt" href="#share-menu">Share</a>
+            </li>
+            
+            <li class="search">
+                <a class="fa-search" href="#search">Search</a>
+                <form id="search" method="get" action="//google.com/search">
+                    <input type="text" name="q" placeholder="Search" />
+                    <input type="hidden" name="q" value="site:http://ngraap-dff.com">
+                </form>
+            </li>
+            <li class="menu">
+                <a class="fa-bars" href="#menu">Menu</a>
+            </li>
+        </ul>
+    </nav>
+</header>
 
-    <ul class="p-facts">
-      <li><i class="fa fa-calendar" aria-hidden="true"></i><time datetime="2016-10-28T00:00:00JST">Oct 28, 2016</time></li>
-      <li><i class="fa fa-bookmark" aria-hidden="true"></i><a href="http://ngraap-dff.compost/">post</a></li>
-      
-    </ul>
 
-    <div class="summary"></div>
-  </div>
-</article>
-</div>
-      
-      
-      <div class="col-sm-6 col-xs-12"><article class="li">
-  <a href="http://ngraap-dff.com/post/praktikum/" class="thumb"></a>
-  <div class="content-inner thin">
-    <h2 class="title"><a href="http://ngraap-dff.com/post/praktikum/">praktikum</a></h2>
+<section id="menu">
 
-    <ul class="p-facts">
-      <li><i class="fa fa-calendar" aria-hidden="true"></i><time datetime="2016-10-26T00:00:00JST">Oct 26, 2016</time></li>
-      <li><i class="fa fa-bookmark" aria-hidden="true"></i><a href="http://ngraap-dff.compost/">post</a></li>
-      
-    </ul>
+    
+        <section>
+            <form class="search" method="get" action="//google.com/search">
+                <input type="text" name="q" placeholder="Search" />
+                <input type="hidden" name="q" value="site:http://ngraap-dff.com">
+            </form>
+        </section>
 
-    <div class="summary">Praktikum bei dff Woche 1 24.10 - 29.10 Tag 1 Ich habe meine HTML- und CSS-Kentnisse erweitert. HTML:
-&lt;!DOCTYPE html&gt; &lt;html&gt; &lt;a href=&quot;text17.html&quot;&gt;Seite 2 &lt;/a&gt; &lt;a href=&quot;text18.html&quot;&gt;Seite 3 &lt;/a&gt; &lt;head&gt; &lt;header&gt; &lt;font color=&quot;blue&quot;&gt; &lt;h1&gt; &lt;b&gt; Text0 &lt;/b&gt; &lt;/h1&gt; &lt;/font&gt; &lt;/head&gt; &lt;link rel=&quot;stylesheet&quot; href=&quot;style.css&quot;&gt; &lt;body bgcolor=&quot;E1F5A9&quot;&gt; &lt;h2&gt; &lt;ol type=&quot;I&quot;&gt; &lt;li&gt; Text1 &lt;/li&gt; &lt;li&gt; &lt;i&gt; Text2 &lt;/i&gt; &lt;/li&gt; &lt;li&gt; Text3 &lt;/li&gt; &lt;/h2&gt; &lt;/ol&gt; &lt;h3&gt; &lt;ul &quot;list-style-type:square&quot; &lt;li&gt; Text4 &lt;/li&gt; &lt;li&gt; Text5 &lt;/li&gt; &lt;li&gt; Text6 &lt;/li&gt; &lt;/ul&gt; &lt;/h3&gt; &lt;/body&gt; &lt;/html&gt;  CSS:</div>
-  </div>
-</article>
-</div>
-      <div class="col-sm-12"></div>
-      
+    
+        <section>
+            <ul class="links">
+                
+                    <li>
+                        <a href="/post">
+                            <h3>
+                                
+                                    <i class="fa fa-newspaper-o">&nbsp;</i>
+                                
+                                Posts
+                            </h3>
+                        </a>
+                    </li>
+                
+            </ul>
+        </section>
+
+    
+        <section>
+            <ul class="links">
+                <header>
+                    <h3>Recent Posts</h3>
+                </header>
+                
+                    
+                
+
+                
+                    <li>
+                        <a href="http://ngraap-dff.com/post/praktikum_Fazit/"><p>Fazit vom Praktikum</p></a>
+                    </li>
+                
+                    <li>
+                        <a href="http://ngraap-dff.com/post/praktikum_Dritte_Woche/"><p>Dritte Woche bei dff</p></a>
+                    </li>
+                
+                    <li>
+                        <a href="http://ngraap-dff.com/post/praktikum_Zweite_Woche/"><p>Zweite Woche bei dff</p></a>
+                    </li>
+                
+                    <li>
+                        <a href="http://ngraap-dff.com/post/praktikum_Erste_Woche/"><p>Erste Woche bei dff</p></a>
+                    </li>
+                
+            </ul>
+        </section>
+
+    
+        
+</section>
+
+    
+    <div id="main">
+        
+            <article class="post">
+    <header>
+    <div class="title">
+        
+            <h2><a href="http://ngraap-dff.com/post/praktikum_Fazit/">Fazit vom Praktikum</a></h2>
+        
+        
+            <p>Hier ziehe ich ein Fazit aus meinem Praktikum</p>
+        
+    </div>
+    <div class="meta">
+        
+            
+        
+
+        <time class="published"
+            datetime='2016-11-11'>
+            November 11, 2016</time>
+        <span class="author">Niklas Graap</span>
+        
+        
+    </div>
+</header>
+
+
+    <section id="social-share">
+        <ul class="icons">
+            
+
+
+<li><a href="//twitter.com/share?url=http%3a%2f%2fngraap-dff.com%2fpost%2fpraktikum_Fazit%2f&text=Fazit%20vom%20Praktikum&via=" target="_blank" class="share-btn twitter">
+    <i class="fa fa-twitter"></i>
+    <p>Twitter</p>
+</a></li>
+
+
+<li><a href="//plus.google.com/share?url=http%3a%2f%2fngraap-dff.com%2fpost%2fpraktikum_Fazit%2f" target="_blank" class="share-btn google-plus">
+    <i class="fa fa-google-plus"></i>
+    <p>Google+</p>
+</a></li>
+
+
+<li><a href="//www.facebook.com/sharer/sharer.php?u=http%3a%2f%2fngraap-dff.com%2fpost%2fpraktikum_Fazit%2f" target="_blank" class="share-btn facebook">
+    <i class="fa fa-facebook"></i>
+    <p>Facebook</p>
+</a></li>
+
+
+<li><a href="//reddit.com/submit?url=http%3a%2f%2fngraap-dff.com%2fpost%2fpraktikum_Fazit%2f&title=Fazit%20vom%20Praktikum" target="_blank" class="share-btn reddit">
+    <i class="fa fa-reddit-alien"></i>
+    <p>Reddit</p>
+</a></li>
+
+
+<li><a href="//www.linkedin.com/shareArticle?url=http%3a%2f%2fngraap-dff.com%2fpost%2fpraktikum_Fazit%2f&title=Fazit%20vom%20Praktikum" target="_blank" class="share-btn linkedin">
+    <i class="fa fa-linkedin"></i>
+    <p>LinkedIn</p>
+</a></li>
+
+
+<li><a href="//www.stumbleupon.com/submit?url=http%3a%2f%2fngraap-dff.com%2fpost%2fpraktikum_Fazit%2f&title=Fazit%20vom%20Praktikum" target="_blank" class="share-btn stumbleupon">
+    <i class="fa fa-stumbleupon"></i>
+    <p>StumbleUpon</p>
+</a></li>
+
+
+<li><a href="mailto:?subject=Check out this post by Niklas%20Graap&body=http%3a%2f%2fngraap-dff.com%2fpost%2fpraktikum_Fazit%2f" target="_blank" class="share-btn email">
+    <i class="fa fa-envelope"></i>
+    <p>Email</p>
+</a></li>
+
+        </ul>
+    </section>
+    
+    
+
+    
+        
+        
+
+
+
+
+    
+    
+        
+    
+
+
+        
+
+        <a href="http://ngraap-dff.com/post/praktikum_Fazit/" class="image featured">
+            <img src="/img/2016/11/Fazit.jpg" alt="" />
+        </a>
+    
+
+
+    <div id="content">
+        
+
+<h1 id="fazit">Fazit</h1>
+
+<p>Bavaria ipsum dolor sit amet Watschnbaam Gstanzl hea es Diandldrahn a ganze. Boarischer abfieseln do zua Sauwedda Fünferl oans, hob i an Suri? Brodzeid kloan g’hupft wia gsprunga singd gfreit mi ghupft wia gsprunga. Oamoi do Biakriagal naa, dahoam. Obandln kummd Gidarn Watschnbaam Mamalad Deandlgwand? Baamwach des basd scho spernzaln naa Radler: Brotzeit i i mechad dee Schwoanshaxn Leonhardifahrt wea ko, dea ko Schaung kost nix wolln des wiad a Mordsgaudi dringma aweng Watschnpladdla: Trihöleridi dijidiholleri a ganze so jo mei heid gfoids ma sagrisch guad? Sodala zünftig do, Edlweiss bitt Biawambn Bussal allerweil Meidromml da: Mehra Brezn owe es, da, hog di hi des is a gmahde Wiesn. Hogg di hera am acht’n Tag schuf Gott des Bia Biazelt muass auszutzeln schüds nei a hawadere midananda. Ledahosn gwihss Xaver, in da greana Au.
+Allerweil Radi hoggd des is a gmahde Wiesn, jedza! Auf’d Schellnsau barfuaßat scheans mim mogsd a Bussal Woibbadinga Schmankal a bissal. Vasteh Gamsbart Bussal Bussal mim Radl foahn a geh Wurschtsolod a bissal wos gehd ollaweil kumm geh griasd eich midnand! Hod oamoi naa i bin a woschechta Bayer. Hogg ma uns zamm damischa Charivari, zua! Oba Charivari schüds nei a Maß und no a Maß, muass in da greana Au sammawiedaguad! Schaugn Charivari des wiad a Mordsgaudi no a Maß wos do legst di nieda allerweil Biagadn. Deandlgwand hod oans ognudelt ned? Kneedl jedza Biaschlegl Woibbadinga dei, mi. Noch da Giasinga Heiwog Broadwurschtbudn fei, is singan! Da, hog di hi heitzdog Haberertanz hod, mim nix. Des basd scho Griasnoggalsubbm des basd scho des muas ma hoid kenna heid nimmds, i daad. Dringma aweng guad om auf’n Gipfe Sauakraud, Wurscht.
+Gwiss ned woar dringma aweng noch da Giasinga Heiwog dei, luja g’hupft wia gsprunga! A Landla Watschnbaam Spuiratz Maßkruag, heid gfoids ma sagrisch guad. Sog i dahoam boarischer nomoi no a Maß unbandig Almrausch des is a gmahde Wiesn: Reiwadatschi resch wolln baddscher midanand. Baamwach i moan scho aa measi, heitzdog? Naa Klampfn vo de Deandlgwand auszutzeln Bussal vo de oans, nimma. Af i hab an zua g’hupft wia gsprunga in da, Almrausch: Ghupft wia gsprunga middn nackata mogsd a Bussal Biazelt auf’d Schellnsau baddscher wui: Edlweiss wolpern Schneid i sog ja nix, i red ja bloß naa, griasd eich midnand Namidog Schbozal Prosd im Beidl. Fias Woibbadinga Ledahosn Gaudi, Schbozal in da greana Au Weiznglasl measi! Schmankal pfenningguat jo mei is des schee Buam Gstanzl kimmt Broadwurschtbudn a bissal wos gehd ollaweil Radler.</p>
+
     </div>
 
+    <footer>
+        <ul class="stats">
+    
+        
+
+        
+        
+            <li>
+                
+                
+                    
+
+                    
+                        Category
+                    
+                
+            </li>
+        
     
 
-  </div>
-  <div class="col-md-4">
-    <aside class="site">
+    
+    
+        <li><a href='/categories/development'>Development</a></li>
+    
+</ul>
 
-  <section>
-    <header>latests</header>
-    <div>
-      <div class="row">
-        
-        <div class="col-md-12 col-sm-6 col-xs-12"><article class="li sm">
-  <a href="http://ngraap-dff.com/post/praktikum-blog/" class="thumb"></a>
-  <header>
-    <div class="title"><a href="http://ngraap-dff.com/post/praktikum-blog/">praktikum blog eins</a></div>
-
-    <ul class="p-facts">
-      <li><i class="fa fa-calendar" aria-hidden="true"></i><time datetime="2016-10-28T00:00:00JST">Oct 28, 2016</time></li>
-      <li><i class="fa fa-bookmark" aria-hidden="true"></i><a href="http://ngraap-dff.compost/">post</a></li>
-    </ul>
-  </header>
-</article>
-</div>
-        
-        
-        <div class="col-md-12 col-sm-6 col-xs-12"><article class="li sm">
-  <a href="http://ngraap-dff.com/post/praktikum/" class="thumb"></a>
-  <header>
-    <div class="title"><a href="http://ngraap-dff.com/post/praktikum/">praktikum</a></div>
-
-    <ul class="p-facts">
-      <li><i class="fa fa-calendar" aria-hidden="true"></i><time datetime="2016-10-26T00:00:00JST">Oct 26, 2016</time></li>
-      <li><i class="fa fa-bookmark" aria-hidden="true"></i><a href="http://ngraap-dff.compost/">post</a></li>
-    </ul>
-  </header>
-</article>
-</div>
-        <div class="col-sm-12"></div>
-        
-      </div>
-    </div>
-  </section>
-
-  
-  <section>
-    <header>category</header>
-    <div>
-      <ul class="p-terms">
-        <li><a href="http://ngraap-dff.comcategories/development">development</a></li>
-      </ul>
-    </div>
-  </section>
-  
-  <section>
-    <header>tag</header>
-    <div>
-      <ul class="p-terms">
-        <li><a href="http://ngraap-dff.comtags/blog">blog</a></li><li><a href="http://ngraap-dff.comtags/praktikum">praktikum</a></li><li><a href="http://ngraap-dff.comtags/programmieren">programmieren</a></li>
-      </ul>
-    </div>
-  </section>
-  
-
-</aside>
-
-  </div>
-</div>
-
-      </div>
-    </main>
-
-    <footer class="l-footer">
-      <div class="container">
-        <p><span class="h-logo">&copy; Praktikum bei DFF</span></p>
-        <aside>
-          <p>Powered by <a href="https://gohugo.io/">Hugo</a>.</p>
-          <p><a href="https://github.com/dim0627/hugo_theme_robust">Robust</a> designed by <a href="http://yet.unresolved.xyz/">Daisuke Tsuji</a>.</p>
-        </aside>
-      </div>
     </footer>
+</article>
+<ul class="actions pagination">
+    
+        <li><a href="http://ngraap-dff.com/post/praktikum_Dritte_Woche/"
+                class="button big previous">Dritte Woche bei dff</a></li>
+    
 
-    <script src="//code.jquery.com/jquery-3.1.1.min.js"></script>
-    <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-    <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.4/highlight.min.js"></script>
-    <script>hljs.initHighlightingOnLoad();</script>
-  </body>
+    
+</ul>
+
+
+
+    
+        <article class="post">
+            <div id="disqus_thread"></div>
+<script type="text/javascript">
+    var disqus_shortname = 'NGraap';
+    var disqus_identifier = 'http:\/\/ngraap-dff.com\/post\/praktikum_Fazit\/';
+    var disqus_title = 'Fazit vom Praktikum';
+    var disqus_url = 'http:\/\/ngraap-dff.com\/post\/praktikum_Fazit\/';
+
+    (function() {
+        var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+        dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+        </article>
+    
+
+
+
+            <section id="share-menu">
+    <section id="social-share-nav">
+        <ul class="links">
+            <header>
+                <h3>Share this post <i class="fa fa-smile-o"></i></h3>
+            </header>
+            
+
+
+<li><a href="//twitter.com/share?url=http%3a%2f%2fngraap-dff.com%2fpost%2fpraktikum_Fazit%2f&text=Fazit%20vom%20Praktikum&via=" target="_blank" class="share-btn twitter">
+    <i class="fa fa-twitter"></i>
+    <p>Twitter</p>
+</a></li>
+
+
+<li><a href="//plus.google.com/share?url=http%3a%2f%2fngraap-dff.com%2fpost%2fpraktikum_Fazit%2f" target="_blank" class="share-btn google-plus">
+    <i class="fa fa-google-plus"></i>
+    <p>Google+</p>
+</a></li>
+
+
+<li><a href="//www.facebook.com/sharer/sharer.php?u=http%3a%2f%2fngraap-dff.com%2fpost%2fpraktikum_Fazit%2f" target="_blank" class="share-btn facebook">
+    <i class="fa fa-facebook"></i>
+    <p>Facebook</p>
+</a></li>
+
+
+<li><a href="//reddit.com/submit?url=http%3a%2f%2fngraap-dff.com%2fpost%2fpraktikum_Fazit%2f&title=Fazit%20vom%20Praktikum" target="_blank" class="share-btn reddit">
+    <i class="fa fa-reddit-alien"></i>
+    <p>Reddit</p>
+</a></li>
+
+
+<li><a href="//www.linkedin.com/shareArticle?url=http%3a%2f%2fngraap-dff.com%2fpost%2fpraktikum_Fazit%2f&title=Fazit%20vom%20Praktikum" target="_blank" class="share-btn linkedin">
+    <i class="fa fa-linkedin"></i>
+    <p>LinkedIn</p>
+</a></li>
+
+
+<li><a href="//www.stumbleupon.com/submit?url=http%3a%2f%2fngraap-dff.com%2fpost%2fpraktikum_Fazit%2f&title=Fazit%20vom%20Praktikum" target="_blank" class="share-btn stumbleupon">
+    <i class="fa fa-stumbleupon"></i>
+    <p>StumbleUpon</p>
+</a></li>
+
+
+<li><a href="mailto:?subject=Check out this post by Niklas%20Graap&body=http%3a%2f%2fngraap-dff.com%2fpost%2fpraktikum_Fazit%2f" target="_blank" class="share-btn email">
+    <i class="fa fa-envelope"></i>
+    <p>Email</p>
+</a></li>
+
+        </ul>
+    </section>
+</section>
+
+        
+    </div>
+    
+<section id="sidebar">
+
+    
+        <section id="intro">
+            
+            
+                
+                    <img src="/img/main/logo.png" width="" alt="" />
+                
+            
+            
+                <header>
+                    <h2>Mein elektronischer Praktikums-Report</h2>
+                    <p>Als ergänzung zur Berichtsmappe habe ich diesen Blog erstellt.</p>
+                </header>
+            
+            <ul class="icons">
+                
+                    <li><a href="http://ngraap-dff.com/index.xml" type="application/rss+xml"
+                        target="_blank" title="RSS" class="fa fa-rss"></a></li>
+                
+                
+            </ul>
+        </section>
+
+    
+        <section id="recent-posts">
+            <ul class="posts">
+                <header>
+                    <h3>Recent Posts</h3>
+                </header>
+                
+                    
+                
+
+                
+                    
+                
+
+                
+                    <li>
+                        <article>
+                            <header>
+                                <h3><a href="http://ngraap-dff.com/post/praktikum_Fazit/">Fazit vom Praktikum</a></h3>
+                                
+                                    
+                                
+                                <time class="published" datetime=
+                                    '2016-11-11'>
+                                    November 11, 2016</time>
+                            </header>
+                        </article>
+                    </li>
+                
+                    <li>
+                        <article>
+                            <header>
+                                <h3><a href="http://ngraap-dff.com/post/praktikum_Dritte_Woche/">Dritte Woche bei dff</a></h3>
+                                
+                                    
+                                
+                                <time class="published" datetime=
+                                    '2016-11-07'>
+                                    November 7, 2016</time>
+                            </header>
+                        </article>
+                    </li>
+                
+                    <li>
+                        <article>
+                            <header>
+                                <h3><a href="http://ngraap-dff.com/post/praktikum_Zweite_Woche/">Zweite Woche bei dff</a></h3>
+                                
+                                    
+                                
+                                <time class="published" datetime=
+                                    '2016-10-31'>
+                                    October 31, 2016</time>
+                            </header>
+                        </article>
+                    </li>
+                
+                    <li>
+                        <article>
+                            <header>
+                                <h3><a href="http://ngraap-dff.com/post/praktikum_Erste_Woche/">Erste Woche bei dff</a></h3>
+                                
+                                    
+                                
+                                <time class="published" datetime=
+                                    '2016-10-24'>
+                                    October 24, 2016</time>
+                            </header>
+                        </article>
+                    </li>
+                
+
+                
+            </ul>
+        </section>
+
+    
+    
+    
+    
+        <section id="categories">
+            <ul class="posts">
+                <header>
+                    <h3><a href="/categories/">Categories</a></h3>
+                </header>
+
+                
+                    
+                
+
+                
+                    <li>
+                        <article>
+                            <header>
+                                <a href="/categories/development/">development</a>
+                                <span style="float:right;">4</span>
+                            </header>
+                        </article>
+                    </li>
+                
+            </ul>
+        </section>
+    
+
+    
+        
+        <section class="blurb">
+            <h2>About</h2>
+            <p>Ich heisse Niklas Graap, bin 24 Jahre alt, wohne in Uslar und besuche die Schule am Thie in Obernjesa. Dort gehe ich in die 8. Klasse.</p>
+
+            <ul class="actions">
+                <li><a href="/about/" class="button">Learn More</a></li>
+            </ul>
+        </section>
+        
+
+    
+        <section id="footer">
+            <ul class="icons">
+                
+                    <li><a href="http://ngraap-dff.com/index.xml" type="application/rss+xml"
+                        target="_blank" title="RSS" class="fa fa-rss"></a></li>
+                
+                
+            </ul>
+
+            <p class="copyright">&copy; Praktikum bei DFF. Design: <a href="http://html5up.net" target="_blank">HTML5 UP</a>. Ported by <a href="//github.com/jpescador" target="_blank">Julio Pescador</a>. Powered by <a href="//gohugo.io" target="_blank">Hugo</a></p>
+        </section>
+
+</section>
+
+            </div>
+        <a id="back-to-top" href="#" class="fa fa-arrow-up fa-border fa-2x"></a>
+        
+
+        
+        
+            
+        
+
+        
+        
+            <script src="/js/jquery.min.js"></script>
+            <script src="/js/skel.min.js"></script>
+            <script src="/js/util.js"></script>
+            <script src="/js/main.js"></script>
+            <script src="/js/backToTop.js"></script>
+            <script src="/js/highlight.pack.js"></script>
+        
+
+        
+
+            
+            <script>hljs.initHighlightingOnLoad();</script>
+            
+    </body>
 </html>
 

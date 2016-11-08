@@ -2,7 +2,8 @@ baseurl = "http://ngraap-dff.com"
 title = "Praktikum bei DFF"
 languageCode = "en-us"
 disqusShortname = "NGraap"
-navbarTitle          = "Praktikum"
+navbarTitle = "Praktikum"
+paginate = 6
 [params.intro.pic]  src       = "/img/main/logo.png"
 [[menu.main]]
     name = "Posts"
@@ -14,3 +15,47 @@ navbarTitle          = "Praktikum"
     url = "/blog"
     identifier = "fa fa-newspaper-o"
     weight = 1
+	
+
+# parms.intro will appear on the sidebar
+# This is optional, but it's suggested to use
+[params.intro]
+    header    = "Mein elektronischer Praktikums-Report"
+
+    paragraph = "Als ergänzung zur Berichtsmappe habe ich diesen Blog erstellt."
+
+    about     = "Ich heisse Niklas Graap, bin 24 Jahre alt, wohne in Uslar und besuche die Schule am Thie in Obernjesa. Dort gehe ich in die 8. Klasse."
+
+	
+# Insert your username and the icon will apear on the page as long as
+# socialAppearAtTop or socialAppearAtBottom is set to true in the params area
+# The social media icons will appear on the sidebar
+[social]
+    github          = "NiklasGraap"
+    bitbucket       = ""
+    jsfiddle        = ""
+    codepen         = ""
+    foursquare      = ""
+    dribbble        = ""
+    deviantart      = ""
+    behance         = ""
+    flickr          = ""
+    instagram       = ""
+    youtube         = ""
+    vimeo           = ""
+    vine            = ""
+    medium          = ""
+    wordpress       = ""
+    tumblr          = ""
+    xing            = ""
+    linkedin        = ""
+    slideshare      = ""
+    stackoverflow   = ""
+    reddit          = ""
+    pinterest       = ""
+    googleplus      = ""
+    facebook        = ""
+    facebook_admin  = ""
+    twitter_domain  = ""
+    twitter         = ""
+    email           = "niklas.graap@dff-solutions.de"
