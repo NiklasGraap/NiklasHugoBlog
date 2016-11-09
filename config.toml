@@ -4,6 +4,8 @@ languageCode = "en-us"
 disqusShortname = "NGraap"
 navbarTitle = "Praktikum"
 paginate = 6
+	relativeURLs = true
+	canonifyURLs = true
 [params.intro.pic]  src       = "/img/main/logo.png"
 [[menu.main]]
     name = "Posts"
@@ -15,7 +17,7 @@ paginate = 6
     url = "/blog"
     identifier = "fa fa-newspaper-o"
     weight = 1
-	
+
 
 # parms.intro will appear on the sidebar
 # This is optional, but it's suggested to use
@@ -24,7 +26,7 @@ paginate = 6
 
     paragraph = "Als ergänzung zur Berichtsmappe habe ich diesen Blog erstellt."
 
-    about     = "Ich heisse Niklas Graap, bin 24 Jahre alt, wohne in Uslar und besuche die Schule am Thie in Obernjesa. Dort gehe ich in die 8. Klasse."
+    about     = "Ich heisse Niklas Graap, bin 14 Jahre alt, wohne in Uslar und besuche die Schule am Thie in Obernjesa. Dort gehe ich in die 8. Klasse."
 
 	
 # Insert your username and the icon will apear on the page as long as
