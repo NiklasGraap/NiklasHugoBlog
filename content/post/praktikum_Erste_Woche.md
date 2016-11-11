@@ -18,17 +18,25 @@ type = "post"
 
 ### Einleitung
 
-Mein Betriebspraktikum mache ich bei dff solutions in Göttingen. Das Büro liegt in der näche vom Bahnhof.
+Mein Betriebspraktikum mache ich bei dff solutions in Göttingen. Das Büro liegt in der Nähe. vom Bahnhof.
 
 [Hier gehts zur Webseite von dff](http://dff-solutions.de)
 
 So sieht das Gebäude aus:
 ![Standort von dff](/arkaden.jpg)
 
-Wieviele Leute arbeiten hier?
-Was sind das für Leute? Was haben die für eine Ausbildung?
-Was wird hier gemacht?
-Was hat dff für Kunden?
+Frage: Wieviele Leute arbeiten hier?
+Antwort: Zwischen 30 und 40 Leute arbeiten bei dff solutions.
+
+Frage: Was sind das für Leute? Was haben die für eine Ausbildung?
+Antwort: Hauptsächlich Software-Entwickler arbeiten hier, einer der Geschäftsführer hat einen Doktor in Wirtschafts- und Sozialwissenschaften.
+Außerdem arbeitet hier ein gelernter Grafikdesigner, und ein gelernter Maschinenbauer.
+
+Frage: Was wird hier gemacht? 
+Antwort: Hier wird Software für Mobile-Computing-Geräte für Lebensmittel-Logistik entwickelt.
+
+Frage: Was hat dff für Kunden?
+Antwort: Große Lebensmittel-Konzerne wie REWE, EDEKA, Lekkerland etc.
 
 #### Tag 1 
 Ich habe meine HTML- und CSS-Kentnisse erweitert.
